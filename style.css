@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bebas+Neue&family=Dancing+Script&family=Kalam:wght@300&family=Lora&family=Manrope:wght@300&family=Merriweather:wght@300&family=Mukta:wght@300&family=Noto+Serif&family=Poppins:wght@300&family=Potta+One&family=Raleway:wght@500&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;1,400&family=Tangerine:wght@700&family=Tilt+Prism&family=Wavefont:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'ADLaM Display', cursive;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Lora', serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Potta One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Tangerine', cursive;
+font-family: 'Tilt Prism', cursive;
+font-family: 'Wavefont', cursive; */
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+img{
+    transition: all .3s;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.1); 
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px ;
+    color: white;
+    background-color: black;
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+font-family: 'Tilt Prism', cursive;
+ 
+
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li{
+    margin: 0px 10px  ;
+    list-style: none;
+    padding: 5px 15px ;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.4;
+}
+
+.list li:hover{
+   background-color: black;
+   color: white;
+}
+
+.head{
+    text-align: center;
+    margin: 20px 10px ;
+font-family: 'ADLaM Display', cursive;
+
+}
+
+.card{
+    max-width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #e5d8d8;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 20px 0px ;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    margin: 15px 0px ;
+}
+
+.card p{
+    word-spacing: 10px ;
+}
+.mentors{
+    margin: 40px 0px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 45px 0px;
+    background-color: black;
+
+}
+.mentor{
+    max-width: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mentor img{
+    max-width: 100%;
+    border: 10px solid white;
+    border-radius: 10px ;
+}
+
+.mentor h4{
+    margin: 10px 0px ;
+    font-size: 30px;
+}
+.mentor p{
+    font-size: 25px;
+}
+.advisor{
+    max-width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0px ;
+}
+.advisors{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px ;
+}
+.advisor h3{
+    font-size: 30px;
+    margin: 10px 0px ;
+
+}
+
+.advisor img{
+    width: 100%;
+    border: 10px solid black;
+    border-radius: 10px ;
+}
+.advisor p{
+    font-size: 25px ;
+}
+
+.advisor button{
+    font-size: 23px;
+    padding: 10px 20px;
+    margin: 15px 0px;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ;
+}
+
+.advisor button:hover{
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
+.f{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px ;
+    padding: 20px 0px ;
+}
+@media screen and (max-width:1200px) {
+    .cards{
+        flex-wrap :wrap ; 
+    }
+    .card{
+        max-width: 40vw;
+    }
+    .advisors{
+        flex-wrap: wrap;
+    }
+    .advisor{
+        max-width: 40vw;
+        margin: 20px 0px ;
+    }
+    .mentors{
+        flex-wrap: wrap;
+    }
+    .mentor{
+        max-width: 40vw;
+        margin: 20px 0px ;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        max-width: 60vw;
+    }
+    .advisors{
+        align-items: center;
+        flex-direction: column;
+    }
+    .advisor{
+        max-width: 60vw;
+    }
+    .mentors{
+        align-items: center;
+        flex-direction: column;
+    }
+    .mentor{
+        max-width: 60vw;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .list li{
+        padding: 5px 7px ;
+    }
+    .head{
+        font-size: 23px ;
+    }
+    .f{
+        font-size: 23px ;
+    }
+}
+
